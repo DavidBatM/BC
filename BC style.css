@@ -1,3 +1,11 @@
+.header__menuNav {
+  color: rgb(7, 7, 7);
+}
+
+.header__cuentaButton {
+  color: black;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -12,7 +20,7 @@
 .grid2 {
   display: grid;
   grid-template-columns: 450;
-  grid-template-rows: 100px 500px 150px;
+  grid-template-rows: 100px 900px 150px;
   grid-template-areas: "header2" "section2" "footer2";
 }
 
@@ -78,10 +86,10 @@
 }
 .header__menuNav a:hover {
   text-decoration: underline;
+  color: rgb(32, 77, 134);
 }
 .header__cuentaButton {
   text-decoration: none;
-  color: black;
 }
 
 .imgSection {
@@ -119,11 +127,176 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.search {
+.header2 {
+  /* aca arranca la pag BC prices */
+  grid-area: header2;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center;
+  padding: 0px 10px 0px 10px;
+  -webkit-text-stroke: 1px #181717;
+  font-style: italic;
+  color: #ccc;
+}
+.header2__logo {
+  display: flex;
+  align-items: center;
+}
+.header2__logo img {
+  height: 50px;
+  border-radius: 50%;
+  margin: 0px 25px 0px 0px;
+}
+.header2__logo__BestCars {
+  text-decoration: none;
+  font-size: 26px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  min-height: 75px;
+  align-items: center;
+  -webkit-text-stroke: 1px #181717;
+  font-style: italic;
+  color: #ccc;
+}
+.header2__menuNav a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  padding-right: 15px;
+}
+.header2__menuNav a:hover {
+  text-decoration: underline;
+  color: rgb(32, 77, 134);
+}
+.header2__cuentaButton {
+  text-decoration: none;
+  color: black;
+}
+
+.tit {
+  grid-area: tit;
+  text-align: center;
+  padding: 15px;
+  background-color: rgb(207, 235, 233);
+}
+
+.photo1 {
+  grid-area: photo1;
+  width: auto;
+  background-color: rgb(207, 235, 233);
+}
+.photo1__imgp1 {
+  display: flex;
+  width: 320px;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+}
+.photo1__desccar {
+  display: flex;
+  justify-content: center;
+}
+
+.photo2 {
+  grid-area: photo2;
+  width: auto;
+  background-color: rgb(207, 235, 233);
+}
+.photo2__imgp2 {
+  display: flex;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+  margin: 0 auto;
+}
+.photo2__desccar {
+  display: flex;
+  justify-content: center;
+}
+
+.photo3 {
+  grid-area: photo3;
+  width: auto;
+  background-color: rgb(207, 235, 233);
+}
+.photo3__imgp3 {
+  display: flex;
+  margin: 0 auto;
+  width: 300px;
+  border-radius: 20px;
+  padding: 10px 10px 10px 10px;
+}
+.photo3__desccar {
+  display: flex;
+  justify-content: center;
+}
+
+.prices {
+  grid-area: prices;
+}
+
+.footer5 {
+  grid-area: footer5;
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+  padding: 10px 0px 0px 0px;
+}
+.footer5__footP {
+  text-decoration: none;
+}
+
+/* aca termina BC best prices */
+/* aca arracan contact us (el header se usa el de arriba) */
+.section2 {
+  display: flex;
+  grid-area: section2;
+  background-color: rgb(207, 235, 233);
+  padding: 0px 20px 50px 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section2__contacUs {
+  text-decoration: none;
+}
+.section2__send {
+  padding: 25px;
+}
+
+.box {
+  display: flex;
+  border-style: solid;
+  grid-area: section2;
+  background-color: rgb(207, 235, 233);
+  padding: 0px 20px 50px 20px;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 
-.search form {
+.footer2 {
+  grid-area: footer2;
+  background-color: white;
+  text-align: center;
+  font-size: 20px;
+  font-family: serif;
+  padding: 10px 0px 0px 0px;
+}
+.footer2__footP {
+  text-decoration: none;
+}
+
+/* aca termina BC contact */
+.search, .logo {
+  align-items: center;
+}
+
+.search form, .logo form {
   padding: 0px;
 }
 
@@ -141,7 +314,6 @@
 
 .logo {
   display: flex;
-  align-items: center;
 }
 
 .logo img {
@@ -172,6 +344,7 @@
 
 .menuNav a:hover {
   text-decoration: underline;
+  color: rgb(32, 77, 134);
 }
 
 .cuentaButton {
@@ -390,13 +563,6 @@
   padding: 10px 0px 0px 0px;
 }
 
-.tit {
-  grid-area: tit;
-  text-align: center;
-  padding: 15px;
-  background-color: rgb(207, 235, 233);
-}
-
 .imgAside {
   height: 0px;
 }
@@ -539,7 +705,7 @@ html {
     padding: 20px 0px 20px 25px;
   }
 
-  .send {
+  .section2__send {
     padding: 25px;
   }
 }
