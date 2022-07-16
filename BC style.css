@@ -14,27 +14,27 @@
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: 100px 200px 200px 900px 300px 150px 150px;
-  grid-template-areas: "header" "section" "imgSection" "sectionN" "video" "article" "aside" "footer";
+  grid-template-areas: "head" "section" "imgSection" "sectionN" "video" "article" "aside" "footer";
 }
 
 .grid2 {
   display: grid;
   grid-template-columns: 450;
-  grid-template-rows: 100px 900px 150px;
+  grid-template-rows: 100px 1000px 150px;
   grid-template-areas: "header2" "section2" "footer2";
 }
 
 .grid3 {
   display: grid;
-  grid-template-columns: 450;
-  grid-template-rows: 100px 500px 150px;
-  grid-template-areas: "header2" "product1" "desc1 " "price1" "product2" "desc2 " "price2" "product3" "desc3 " "price3" "product4" "desc4 " "price4" "footer3";
+  grid-template-columns: 150px auto;
+  grid-template-rows: 100px 250px 450px 250px 450px 250px 450px 250px 450px 80px;
+  grid-template-areas: "header2 header2" "filt mg" "filt desc1" "filt product2" "filt desc2" "filt product3" "filt desc3" "filt product4" "filt desc4" "footer3 footer3";
 }
 
 .grid4 {
   display: grid;
   grid-template-columns: 450;
-  grid-template-rows: 100px 1100px 150px;
+  grid-template-rows: 100px 1250px 150px;
   grid-template-areas: "header2" "home4" "footer4";
 }
 
@@ -46,7 +46,7 @@
 }
 
 .header {
-  grid-area: header;
+  grid-area: head;
   background-color: white;
   display: flex;
   justify-content: space-between;
@@ -60,6 +60,7 @@
 .header__logo {
   display: flex;
   align-items: center;
+  padding: 0px 10px 0px 0px;
 }
 .header__logo img {
   height: 50px;
@@ -83,6 +84,8 @@
   color: black;
   font-weight: 500;
   padding-right: 15px;
+  padding-left: 5px;
+  margin: 0px 0px 0px 0px;
 }
 .header__menuNav a:hover {
   text-decoration: underline;
@@ -90,6 +93,7 @@
 }
 .header__cuentaButton {
   text-decoration: none;
+  color: black;
 }
 
 .imgSection {
@@ -127,8 +131,7 @@
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.header2 {
-  /* aca arranca la pag BC prices */
+.header2 { /* aca arranca la pag BC prices */
   grid-area: header2;
   background-color: white;
   display: flex;
@@ -143,6 +146,7 @@
 .header2__logo {
   display: flex;
   align-items: center;
+  padding: 0px 10px 0px 0px;
 }
 .header2__logo img {
   height: 50px;
@@ -166,6 +170,8 @@
   color: black;
   font-weight: 500;
   padding-right: 15px;
+  padding-left: 5px;
+  margin: 0px 0px 0px 0px;
 }
 .header2__menuNav a:hover {
   text-decoration: underline;
@@ -260,6 +266,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 15px 0px 0px 0px;
 }
 .section2__contacUs {
   text-decoration: none;
@@ -483,7 +490,7 @@
 }
 
 .accordion {
-  padding: 20px 120px 20px 120px;
+  padding: 20px 50px 20px 50px;
 }
 
 .imgCompany {
@@ -499,7 +506,7 @@
 }
 
 .text4 {
-  padding: 10px 150px 10px 150px;
+  padding: 10px 100px 10px 100px;
   font-size: 24px;
 }
 
@@ -668,43 +675,42 @@ html {
   .grid {
     grid-template-columns: auto auto 200px;
     grid-template-rows: 100px 350px 350px 300px 80px;
-    grid-template-areas: "header header header " "imgSection section aside" "sectionN video aside" "article article article" "footer footer footer";
+    grid-template-areas: "head head head" "imgSection section aside" "sectionN video aside" "article article article" "footer footer footer";
   }
-
   .grid2 {
     background-color: rgb(217, 235, 233);
     grid-template-columns: auto;
     grid-template-rows: 100px auto 150px;
     grid-template-areas: "header2" "section2" "footer2";
   }
-
   .grid3 {
     display: grid;
     grid-template-columns: 150px 400px auto;
-    grid-template-rows: 100px 300px 300px 300px 300px 80px;
+    grid-template-rows: 100px 350px 350px 350px 350px 80px;
     grid-template-areas: "header2 header2 header2" "filt mg desc1" "filt product2 desc2" "filt product3 desc3" "filt product4 desc4" "footer3 footer3 footer3";
   }
-
+  .grid4 {
+    display: grid;
+    grid-template-columns: 450;
+    grid-template-rows: 100px 1000px 150px;
+    grid-template-areas: "header2" "home4" "footer4";
+  }
   .grid5 {
     display: grid;
     grid-template-columns: auto auto auto;
     grid-template-rows: 100px 100px 300px 200px 150px;
     grid-template-areas: "header2 header2 header2" "tit tit tit" "photo1 photo2 photo3" "prices prices prices" "footer5 footer5 footer5";
   }
-
   .imgAside {
     height: 700px;
   }
-
   .bug {
     height: 100%;
   }
-
   .contacUs {
     margin: auto;
     padding: 20px 0px 20px 25px;
   }
-
   .section2__send {
     padding: 25px;
   }
@@ -713,12 +719,14 @@ html {
   h2.BestCars {
     padding-right: 15px;
   }
-
   .menuNav {
     padding: 10px 0px;
     flex-direction: column;
   }
-
+  .header__menuNav {
+    padding: 10px 0px;
+    flex-direction: column;
+  }
   .imgSection img {
     width: 160px;
   }
@@ -730,7 +738,6 @@ html {
     border-radius: 20px;
     max-height: 250px;
   }
-
   .news2 {
     width: 350px;
     font-size: 25px;
