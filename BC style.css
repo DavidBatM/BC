@@ -12,7 +12,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 450;
   grid-template-rows: 100px 200px 200px 900px 300px 150px 150px;
   grid-template-areas: "head" "section" "imgSection" "sectionN" "video" "article" "aside" "footer";
 }
@@ -26,9 +26,13 @@
 
 .grid3 {
   display: grid;
-  grid-template-columns: 150px auto;
+  grid-template-columns: 100px auto;
   grid-template-rows: 100px 250px 450px 250px 450px 250px 450px 250px 450px 80px;
   grid-template-areas: "header2 header2" "filt mg" "filt desc1" "filt product2" "filt desc2" "filt product3" "filt desc3" "filt product4" "filt desc4" "footer3 footer3";
+}
+
+.btn-groupme-2 {
+  justify-content: center;
 }
 
 .grid4 {
@@ -40,7 +44,7 @@
 
 .grid5 {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 450;
   grid-template-rows: 100px 200px 300px 300px 300px 200px 150px;
   grid-template-areas: "header2" "tit" "photo1" "photo2" "photo3" "prices" "footer5";
 }
@@ -126,9 +130,12 @@
   align-items: center;
 }
 .section__desc {
-  padding: 20px 50px 20px 50px;
+  margin: 10px 50px 10px 50px;
+  padding: 10px 30px 10px 30px;
   font-size: 20px;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: rgba(51, 52, 54, 0.247);
+  border-radius: 25px;
 }
 
 .header2 { /* aca arranca la pag BC prices */
@@ -307,13 +314,20 @@
   padding: 0px;
 }
 
+.base {
+  background-color: silver;
+  border-color: black;
+  border-width: 1px;
+  border-radius: 3px;
+}
+
 .action {
   text-align: center;
 }
 
 .formm {
   width: 440px;
-  margin: 0px 0px 20px 0px;
+  margin: 30px 0px 20px 0px;
   border-radius: 20px;
   border: 1px solid #dfe1e5;
   padding: 5px;
@@ -389,11 +403,9 @@
 .news2 {
   text-align: center;
   font-size: 25px;
-  color: white;
-  background-color: black;
-  padding: 2px;
+  color: rgb(49, 51, 59);
   margin: 0px 200px 0px 200px;
-  padding: 0px 60px 0px 60px;
+  padding: 0px 20px 0px 20px;
   border-radius: 15px;
 }
 
@@ -637,7 +649,7 @@
 }
 
 .DescL {
-  padding: 50px 0px 0px 0px;
+  padding: 50px 20px 0px 20px;
 }
 
 .footer3 {
